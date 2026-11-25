@@ -1,4 +1,11 @@
-dist/
-logs/
 node_modules/
+.env
+temp/
+dist/
+.vscode/
+.idea/
 package-lock.json
+.DS_Store
+src/migrations/
+logs/
+docker-compose.yaml
