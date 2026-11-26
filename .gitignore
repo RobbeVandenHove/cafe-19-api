@@ -4,7 +4,6 @@ temp/
 dist/
 .vscode/
 .idea/
-package-lock.json
 .DS_Store
 src/migrations/
 logs/
