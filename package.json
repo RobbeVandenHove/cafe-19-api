@@ -10,7 +10,9 @@
     "start": "node dist/src/index.js",
     "dev": "nodemon src/index.ts",
     "m:g:c": "npx mikro-orm migration:create --config mikro-orm.config.ts",
+    "prod:m:g:c": "npx mikro-orm migration:create --config mikro-orm.config.js",
     "m:g:u": "npx mikro-orm migration:up --config mikro-orm.config.ts",
+    "prod:m:g:u": "npx mikro-orm migration:up --config mikro-orm.config.js",
     "seed": "npx mikro-orm seeder:run --config mikro-orm.config.ts",
     "build": "tsc"
   },
