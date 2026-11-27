@@ -24,5 +24,5 @@ COPY --from=builder /app/mikro-orm.config.ts ./mikro-orm.config.ts
 
 EXPOSE 3000
 
-# CMD ["sh", "-c", "npx mikro-orm migration:up --config /app/dist/mikro-orm.config.js && npx mikro-orm seeder:run --config /app/dist/mikro-orm.config.js && npm start"]
-CMD ["sh", "-c", "npx mikro-orm migration:list --config /app/dist/mikro-orm.config.js; sleep infinity"]
+CMD ["sh", "-c", "npx mikro-orm migration:up --config /app/dist/mikro-orm.config.js && npx mikro-orm seeder:run --config /app/dist/mikro-orm.config.js && npm start"]
+# CMD ["sh", "-c", "npx mikro-orm migration:list --config /app/dist/mikro-orm.config.js; sleep infinity"]

@@ -28,6 +28,12 @@ const config: Options<PostgreSqlDriver> = {
         emit: 'ts',
         fileName: (className: string) => className,
     },
+    migrations: {
+        path: './dist/src/migrations',
+        pathTs: './src/migrations',
+        glob: '!(*.d).{js,ts}',
+        transactional: true,
+    },
 };
 
 export default config;
