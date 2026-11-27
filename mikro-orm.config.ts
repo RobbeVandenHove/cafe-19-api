@@ -21,7 +21,8 @@ const config: Options<PostgreSqlDriver> = {
     debug: false,
     extensions: [Migrator, SeedManager],
     seeder: {
-        path: './seeder',
+        path: './dist/seeder',
+        pathTs: './seeder',
         defaultSeeder: 'DatabaseSeeder',
         glob: '!(*.d).{js,ts}',
         emit: 'ts',

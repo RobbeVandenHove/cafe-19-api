@@ -104,6 +104,7 @@
     "include": [
         "src/**/*.ts",
         "src/**/test/**/*.ts",
-        "mikro-orm.config.ts"
+        "mikro-orm.config.ts",
+        "seeder/*"
     ]
 }
