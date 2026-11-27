@@ -26,4 +26,4 @@ COPY --from=builder /app/src ./src
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "npm run m:g:u && npm run seed && npm start"]
+CMD ["sh", "-c", "npm run m:g:c && npm run m:g:u && npm run seed && npm start"]
